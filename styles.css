@@ -147,11 +147,11 @@ button {
   cursor: pointer;
 }
 
-/* #histories {
+#histories {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-} */
+}
 
 /* #histories {
   display: grid;
@@ -196,6 +196,24 @@ button {
   }
 
   .card {
+    flex-direction: column;
+  }
+}
+
+@media only screen and (min-width: 769px) {
+  .box-container {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  #histories {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+  }
+
+  .card {
+    display: flex;
     flex-direction: column;
   }
 }
